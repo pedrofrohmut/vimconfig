@@ -2,6 +2,6 @@
 
 The vim default file will just source for this repo files. This way we can change vim full config just by changing its source
 
-.vimrc => vimconfig/main.vim
+.vimrc => "source C:/Users/Pedro/vimconfig/main.vim"
 
-.gvimrc => vimconfig/gvim.vim
+.gvimrc => "source C:/Users/Pedro/vimconfig/gvim.vim"
