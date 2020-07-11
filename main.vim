@@ -1,10 +1,5 @@
 " Vim-Plug
 source C:/Users/Pedro/vimconfig/plugins.vim
-" Vim Config/Defaults
-source C:/Users/Pedro/vimconfig/config.vim
-" My Maps
-source C:/Users/Pedro/vimconfig/mymaps.vim
-
 
 
 " Vim Airline
@@ -27,3 +22,9 @@ source C:/Users/Pedro/vimconfig/nerd.vim
 source C:/Users/Pedro/vimconfig/typescript.vim
 " Ultisnips
 source C:/Users/Pedro/vimconfig/ultisnips.vim
+
+
+" Vim Config/Defaults
+source C:/Users/Pedro/vimconfig/config.vim
+" My Maps
+source C:/Users/Pedro/vimconfig/mymaps.vim

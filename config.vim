@@ -45,3 +45,5 @@ set autoread " auto reload files on Vim when they change on disk
 
 "set guifont=Consolas:h12:cANSI:qDRAFT
 set guifont=Droid_Sans_Mono_Slashed_for_Pow:h11:cANSI:qANTIALIASED
+
+set cmdheight=1

@@ -12,8 +12,8 @@ Plug 'mxw/vim-jsx', { 'for': ['jsx', 'javascript.jsx'] }
 " Ultisnips (Required for React Snippets)
 "Plug 'sirver/ultisnips'
 
-" VueJS Support
-Plug 'posva/vim-vue'
+" VueJS Support -> Test: Replaced for coc-vetur
+Plug 'posva/vim-vue' 
 
 " TypeScript Syntax Highlight
 Plug 'leafgarland/typescript-vim'
