@@ -2,7 +2,7 @@ filetype plugin on
 
 filetype indent plugin on
 
-set pythonthreedll=python37.dll
+"set pythonthreedll=python36.dll
 if has('python3')
   silent! python3 1
 endif
@@ -11,6 +11,7 @@ endif
 autocmd VimEnter * call libcallnr("gvimfullscreen.dll", "ToggleFullScreen",0)
 " activate/deactivate full screen with function key <F11>  
 inoremap <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+
 
 
 " VIM
@@ -47,3 +48,15 @@ set autoread " auto reload files on Vim when they change on disk
 set guifont=Droid_Sans_Mono_Slashed_for_Pow:h11:cANSI:qANTIALIASED
 
 set cmdheight=1
+
+
+
+" TypeScript VIM
+let g:typescript_indent_disable = 0
+autocmd FileType typescript set filetype=typescript " For Syntax HighLight
+autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
+
+
+
+" JavaScript VIM
+autocmd FileType json set filetype=javascript.json " For Syntax HighLight on comments

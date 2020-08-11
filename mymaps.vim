@@ -30,3 +30,7 @@ inoremap ({<CR> ({<CR>})<Esc>ko
 
 " Move a Center
 nnoremap gg ggzz
+
+" Tabs
+nnoremap <Tab> gt
+nnoremap <S-Tab> gT
