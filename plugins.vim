@@ -15,6 +15,9 @@ Plug 'mxw/vim-jsx', { 'for': ['jsx', 'javascript.jsx'] }
 " VueJS Support -> Test: Replaced for coc-vetur
 Plug 'posva/vim-vue' 
 
+" Svelte Syntax Highlight
+Plug 'leafOfTree/vim-svelte-plugin'
+
 " TypeScript Syntax Highlight
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'

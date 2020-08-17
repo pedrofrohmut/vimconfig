@@ -1,30 +1,32 @@
 " Vim-Plug
-source C:/Users/Pedro/vimconfig/plugins.vim
+source ~/vimconfig/plugins.vim
 
 
 " Vim Airline
-source C:/Users/Pedro/vimconfig/airline.vim
+source ~/vimconfig/airline.vim
 " Ale
-source C:/Users/Pedro/vimconfig/ale.vim
+source ~/vimconfig/ale.vim
 " COC 
-source C:/Users/Pedro/vimconfig/coc.vim
+source ~/vimconfig/coc.vim
 " C# / OmniSharp
-source C:/Users/Pedro/vimconfig/csharp.vim
+source ~/vimconfig/csharp.vim
 " CtrlP
-source C:/Users/Pedro/vimconfig/ctrlp.vim
+source ~/vimconfig/ctrlp.vim
 " Emmet-vim
-source C:/Users/Pedro/vimconfig/emmet.vim
+source ~/vimconfig/emmet.vim
 " JavaScript
-source C:/Users/Pedro/vimconfig/javascript.vim
+source ~/vimconfig/javascript.vim
 " NERD
-source C:/Users/Pedro/vimconfig/nerd.vim
+source ~/vimconfig/nerd.vim
+" Svelte
+source ~/vimconfig/svelte.vim
 " TypeScript
-source C:/Users/Pedro/vimconfig/typescript.vim
+source ~/vimconfig/typescript.vim
 " Ultisnips
-source C:/Users/Pedro/vimconfig/ultisnips.vim
+source ~/vimconfig/ultisnips.vim
 
 
 " Vim Config/Defaults
-source C:/Users/Pedro/vimconfig/config.vim
+source ~/vimconfig/config.vim
 " My Maps
-source C:/Users/Pedro/vimconfig/mymaps.vim
+source ~/vimconfig/mymaps.vim
