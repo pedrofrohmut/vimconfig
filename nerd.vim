@@ -1,5 +1,5 @@
 " NERDTree  
-nnoremap <C-B> :NERDTreeToggle<CR>
+nnoremap <C-Q> :NERDTreeToggle<CR>
 
 " NERDCommenter
 let g:NERDSpaceDelims = 1

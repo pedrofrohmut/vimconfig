@@ -34,3 +34,13 @@ nnoremap gg ggzz
 " Tabs
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT
+
+" Scroll-up
+nnoremap <Up> <C-Y>
+nnoremap <S-Up> <C-U>
+nnoremap <C-UP> <C-B>
+
+" Scroll-down
+nnoremap <Down> <C-E>
+nnoremap <S-Down> <C-D>
+nnoremap <C-Down> <C-F>
