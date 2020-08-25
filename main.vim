@@ -23,7 +23,7 @@ source ~/vimconfig/svelte.vim
 " TypeScript
 source ~/vimconfig/typescript.vim
 " Ultisnips
-source ~/vimconfig/ultisnips.vim
+source ~/vimconfig/snippets.vim
 
 
 " Vim Config/Defaults

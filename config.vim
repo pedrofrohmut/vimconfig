@@ -8,9 +8,9 @@ if has('python3')
 endif
 
 "run the command immediately when starting vim
-autocmd VimEnter * call libcallnr("gvimfullscreen.dll", "ToggleFullScreen",0)
+autocmd VimEnter * call libcallnr("gvimfullscreen_64.dll", "ToggleFullScreen", 0)
 " activate/deactivate full screen with function key <F11>  
-inoremap <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+nnoremap <F11> <Esc>:call libcallnr("gvimfullscreen_64.dll", "ToggleFullScreen", 0)<CR>
 
 
 

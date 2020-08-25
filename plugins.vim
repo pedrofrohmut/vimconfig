@@ -7,10 +7,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx', { 'for': ['jsx', 'javascript.jsx'] }
 
 " React Snippets (Python 3 and ultisnips Required)
-"Plug 'epilande/vim-react-snippets'
+Plug 'epilande/vim-react-snippets'
 
 " Ultisnips (Required for React Snippets)
-"Plug 'sirver/ultisnips'
+Plug 'sirver/ultisnips'
 
 " VueJS Support -> Test: Replaced for coc-vetur
 Plug 'posva/vim-vue' 
