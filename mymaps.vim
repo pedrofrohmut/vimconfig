@@ -17,9 +17,11 @@ nnoremap <Enter> i<CR><Esc>
 " Utils
 inoremap <F8> <Esc>:set fileformat=unix<CR>
 inoremap <F7> <Esc>:ALEFix prettier<CR>
+inoremap <S-F7> <Esc>:ALEFix eslint<CR>
 inoremap <F6> <Esc>:w<CR>
 nnoremap <F8> <Esc>:set fileformat=unix<CR>
 nnoremap <F7> <Esc>:ALEFix prettier<CR>
+nnoremap <S-F7> <Esc>:ALEFix eslint<CR>
 nnoremap <F6> <Esc>:w<CR>
 
 " Closing Characters

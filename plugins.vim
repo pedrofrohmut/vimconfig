@@ -33,6 +33,7 @@ Plug 'OmniSharp/omnisharp-vim'
 
 " Surrounder for Simple Stuff
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 " Commenter
 Plug 'tpope/vim-commentary'
