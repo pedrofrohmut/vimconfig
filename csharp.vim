@@ -73,4 +73,4 @@ augroup omnisharp_commands
 augroup END
 
 " Enable snippet completion, using the ultisnips plugin
-" let g:OmniSharp_want_snippet=1
+let g:OmniSharp_want_snippet=1

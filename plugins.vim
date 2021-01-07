@@ -4,7 +4,7 @@ call plug#begin('~/vimfiles/plugged') " Plug BEGIN
 Plug 'pangloss/vim-javascript'
 
 " JSX Support
-Plug 'mxw/vim-jsx', { 'for': ['jsx', 'javascript.jsx'] }
+Plug 'mxw/vim-jsx', { 'for': ['jsx', 'javascript.jsx', 'tsx', 'typescript.tsx'] }
 
 " React Snippets (Python 3 and ultisnips Required)
 Plug 'epilande/vim-react-snippets'

@@ -18,7 +18,7 @@ nnoremap <Enter> i<CR><Esc>
 inoremap <F8> <Esc>:set fileformat=unix<CR>
 inoremap <F7> <Esc>:ALEFix prettier<CR>
 inoremap <S-F7> <Esc>:ALEFix eslint<CR>
-inoremap <F6> <Esc>:w<CR>
+inoremap <F6> <Esc>:wa<CR>
 nnoremap <F8> <Esc>:set fileformat=unix<CR>
 nnoremap <F7> <Esc>:ALEFix prettier<CR>
 nnoremap <S-F7> <Esc>:ALEFix eslint<CR>
@@ -46,3 +46,9 @@ nnoremap <C-UP> <C-B>
 nnoremap <Down> <C-E>
 nnoremap <S-Down> <C-D>
 nnoremap <C-Down> <C-F>
+
+" Buffer Nav
+inoremap <Left> <Esc>:bprevious<CR>
+nnoremap <Left> <Esc>:bprevious<CR>
+inoremap <Right> <Esc>:bnext<CR>
+nnoremap <Right> <Esc>:bnext<CR>
