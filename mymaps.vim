@@ -1,7 +1,7 @@
 " MY MAPS
 
 " Closer Del
-"inoremap <C-L> <Del> " Down in favor of snippets trigger
+inoremap <C-L> <Del>
 
 " Better Backspace
 inoremap <C-BS> <C-w>
