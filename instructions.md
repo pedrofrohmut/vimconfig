@@ -50,3 +50,7 @@ https://medium.com/@slmeng/how-to-install-powerline-fonts-in-windows-b2eedecace5
 https://github.com/powerline/fonts
 Execute the "fonts/install.ps1" file in "Admin" PowerShell with Set-ExecutionPolicy "Bypass"
 
+6. Install Coc extensions
+:CocInstall coc-css
+:CocInstall coc-html
+...
