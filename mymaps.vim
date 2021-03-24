@@ -24,11 +24,12 @@ nnoremap <F7> <Esc>:ALEFix prettier<CR>
 nnoremap <S-F7> <Esc>:ALEFix eslint<CR>
 nnoremap <F6> <Esc>:w<CR>
 
-" Closing Characters
+" Closing Characters on enter (CR)
 inoremap (<CR> (<CR>)<Esc>ko
 inoremap [<CR> [<CR>]<Esc>ko
 inoremap {<CR> {<CR>}<Esc>ko
 inoremap ({<CR> ({<CR>})<Esc>ko
+inoremap `<CR> `<CR>`<Space><Esc>ko<Tab>
 
 " Move a Center
 nnoremap gg ggzz
