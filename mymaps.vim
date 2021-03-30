@@ -29,7 +29,8 @@ inoremap (<CR> (<CR>)<Esc>ko
 inoremap [<CR> [<CR>]<Esc>ko
 inoremap {<CR> {<CR>}<Esc>ko
 inoremap ({<CR> ({<CR>})<Esc>ko
-inoremap `<CR> `<CR>`<Space><Esc>ko<Tab>
+inoremap `<CR> `<CR>`<Esc>ko<Tab>
+inoremap (`<CR> (``)<Esc>hi<CR><Esc>ko<Tab>
 
 " Move a Center
 nnoremap gg ggzz

@@ -31,6 +31,9 @@ Plug 'Quramy/tsuquyomi'
 " C# Support - Omnisharp
 Plug 'OmniSharp/omnisharp-vim'
 
+" Kotlin 
+Plug 'udalov/kotlin-vim'
+
 " Surrounder for Simple Stuff
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
