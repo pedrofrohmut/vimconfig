@@ -4,7 +4,7 @@ call plug#begin('~/vimfiles/plugged') " Plug BEGIN
 Plug 'pangloss/vim-javascript'
 
 " JSX Support
-Plug 'mxw/vim-jsx', { 'for': ['jsx', 'javascript.jsx', 'tsx', 'typescript.tsx'] }
+Plug 'maxmellon/vim-jsx-pretty'
 
 " React Snippets (Python 3 and ultisnips Required)
 Plug 'epilande/vim-react-snippets'
@@ -60,8 +60,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 
 " Vim Airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 
 " Lots of good Colorschemes for Vim
 Plug 'chriskempson/base16-vim'
