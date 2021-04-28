@@ -46,10 +46,10 @@ set t_Co=256
 "colorscheme base16-harmonic-dark
 "colorscheme base16-horizon-dark
 "colorscheme base16-ia-dark
-colorscheme base16-materia
+"colorscheme base16-materia
 "colorscheme base16-material
 "colorscheme base16-tomorrow-night-eighties
-"colorscheme base16-seti
+colorscheme base16-seti
 "colorscheme base16-phd
 
 set nocompatible
