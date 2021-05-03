@@ -14,6 +14,8 @@ source ~/vimconfig/csharp.vim
 source ~/vimconfig/ctrlp.vim
 " Emmet-vim
 source ~/vimconfig/emmet.vim
+" Java
+source ~/vimconfig/java.vim
 " JavaScript
 source ~/vimconfig/javascript.vim
 " NERD
