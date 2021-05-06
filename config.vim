@@ -71,5 +71,5 @@ autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 
 
 " JavaScript VIM
-"autocmd FileType json set filetype=javascript.json " For Syntax HighLight on comments
-autocmd FileType *.json set filetype=json " For Syntax HighLight on comments
+autocmd FileType json set filetype=javascript.json " For Syntax HighLight on comments
+" autocmd FileType *.json set filetype=json " For Syntax HighLight on comments
