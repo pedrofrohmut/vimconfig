@@ -1,20 +1,23 @@
 filetype plugin on
-
-filetype indent plugin on
+"filetype indent plugin on
 
 "set pythonthreedll=python36.dll
 if has('python3')
   silent! python3 1
 endif
 
-"run the command immediately when starting vim
+
+"" Run the command immediately when starting vim
 autocmd VimEnter * call libcallnr("gvimfullscreen_64.dll", "ToggleFullScreen", 0)
-" activate/deactivate full screen with function key <F11>  
+"" Activate/deactivate full screen with function key <F11>  
 nnoremap <F11> <Esc>:call libcallnr("gvimfullscreen_64.dll", "ToggleFullScreen", 0)<CR>
 
 
+"" File format to linux
+autocmd VimEnter * if (!&modifiable || &readonly) | set fileformat=unix | endif
 
-" VIM
+
+"" VIM Configs
 set number
 set relativenumber
 
@@ -30,6 +33,8 @@ set softtabstop=2
 
 set backspace=2
 set mouse=a
+
+set scrollfocus
 
 set encoding=utf-8
 set fileformat=unix
@@ -56,11 +61,10 @@ set nocompatible
 
 set autoread " auto reload files on Vim when they change on disk
 
-"set guifont=Consolas:h12:cANSI:qDRAFT
+"set guifont=Consolas:h12:cANSI:qDRAFT " BEST but no support for vim-airline
 set guifont=Droid_Sans_Mono_Slashed_for_Pow:h11:cANSI:qANTIALIASED
 
 set cmdheight=1
-
 
 
 " TypeScript VIM
@@ -69,7 +73,5 @@ autocmd FileType typescript set filetype=typescript " For Syntax HighLight
 autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 
 
-
 " JavaScript VIM
-autocmd FileType json set filetype=javascript.json " For Syntax HighLight on comments
-" autocmd FileType *.json set filetype=json " For Syntax HighLight on comments
+autocmd VimEnter javascript.json set filetype=json " For Syntax HighLight on comments
