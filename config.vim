@@ -1,5 +1,5 @@
-filetype plugin on
-"filetype indent plugin on
+"filetype plugin on
+filetype indent plugin on
 
 "set pythonthreedll=python36.dll
 if has('python3')
@@ -11,10 +11,6 @@ endif
 autocmd VimEnter * call libcallnr("gvimfullscreen_64.dll", "ToggleFullScreen", 0)
 "" Activate/deactivate full screen with function key <F11>  
 nnoremap <F11> <Esc>:call libcallnr("gvimfullscreen_64.dll", "ToggleFullScreen", 0)<CR>
-
-
-"" File format to linux
-autocmd VimEnter * if (!&modifiable || &readonly) | set fileformat=unix | endif
 
 
 "" VIM Configs
@@ -43,7 +39,7 @@ set colorcolumn=81,121 " Color colums
 
 set t_Co=256
 
-" COLOR SCHEMES
+"" COLOR SCHEMES
 "colorscheme base16-black-metal-bathory
 "colorscheme base16-black-metal-mayhem
 "colorscheme base16-chalk
@@ -65,12 +61,6 @@ set autoread " auto reload files on Vim when they change on disk
 set guifont=Droid_Sans_Mono_Slashed_for_Pow:h11:cANSI:qANTIALIASED
 
 set cmdheight=1
-
-
-" TypeScript VIM
-let g:typescript_indent_disable = 0
-autocmd FileType typescript set filetype=typescript " For Syntax HighLight
-autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 
 
 " JavaScript VIM

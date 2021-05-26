@@ -2,6 +2,12 @@
 source ~/vimconfig/plugins.vim
 
 
+" Vim Config/Defaults
+source ~/vimconfig/config.vim
+" My Maps
+source ~/vimconfig/mymaps.vim
+
+
 " Vim Airline
 source ~/vimconfig/airline.vim
 " Ale
@@ -14,21 +20,9 @@ source ~/vimconfig/csharp.vim
 source ~/vimconfig/ctrlp.vim
 " Emmet-vim
 source ~/vimconfig/emmet.vim
-" Java
-source ~/vimconfig/java.vim
-" JavaScript
-source ~/vimconfig/javascript.vim
 " NERD
 source ~/vimconfig/nerd.vim
-" Svelte
-source ~/vimconfig/svelte.vim
 " TypeScript
 source ~/vimconfig/typescript.vim
 " Ultisnips
 source ~/vimconfig/snippets.vim
-
-
-" Vim Config/Defaults
-source ~/vimconfig/config.vim
-" My Maps
-source ~/vimconfig/mymaps.vim

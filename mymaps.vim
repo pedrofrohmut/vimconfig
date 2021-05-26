@@ -1,13 +1,13 @@
-" MY MAPS
+" LEADER
+let mapleader="\<Space>"
+nnoremap <Space> <Nop>
+map <Space> <Leader>
 
 " Closer Del
 inoremap <C-L> <Del>
 
 " Better Backspace
 inoremap <C-BS> <C-w>
-
-" Insert Space Before in Normal_Mode
-"nnoremap <Space> i<Space><Esc>
 
 " Insert Line in Normal_Mode
 nnoremap <S-Enter> O<Esc>j
