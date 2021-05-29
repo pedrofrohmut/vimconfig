@@ -36,8 +36,10 @@ inoremap (`<CR> (``)<Esc>hi<CR><Esc>ko<Tab>
 nnoremap gg ggzz
 
 " Tabs
-nnoremap <Tab> gt
-nnoremap <S-Tab> gT
+"nnoremap <Tab> gt
+"nnoremap <S-Tab> gT
+nnoremap ] gt
+nnoremap [ gT
 
 " Scroll-up
 nnoremap <Up> <C-Y>
