@@ -7,16 +7,16 @@ Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 
 " React Snippets (Python 3 and ultisnips Required)
-Plug 'epilande/vim-react-snippets'
+"Plug 'epilande/vim-react-snippets'
 
 " Ultisnips (Required for React Snippets)
-Plug 'sirver/ultisnips'
+"Plug 'sirver/ultisnips'
 
 " VueJS Support -> Test: Replaced for coc-vetur
-Plug 'posva/vim-vue' 
+"Plug 'posva/vim-vue' 
 
 " Svelte Syntax Highlight
-Plug 'leafOfTree/vim-svelte-plugin'
+"Plug 'leafOfTree/vim-svelte-plugin'
 
 " TypeScript Syntax Highlight
 Plug 'leafgarland/typescript-vim'
@@ -31,8 +31,8 @@ Plug 'Quramy/tsuquyomi'
 " C# Support - Omnisharp
 Plug 'OmniSharp/omnisharp-vim'
 
-" Kotlin 
-Plug 'udalov/kotlin-vim'
+" Elixir Syntax Highlight/Indentation
+Plug 'elixir-editors/vim-elixir'
 
 " Surrounder for Simple Stuff
 Plug 'tpope/vim-surround'
