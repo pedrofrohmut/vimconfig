@@ -15,9 +15,10 @@ nnoremap <C-Enter> o<Esc>k
 nnoremap <Enter> i<CR><Esc>
 
 " Utils
-nnoremap <F8> <Esc>:set fileformat=unix<CR>
-nnoremap <F7> <Esc>:ALEFix prettier<CR>
-nnoremap <F6> <Esc>:w<CR>
+nnoremap <F6> :w<CR>
+nnoremap <F7> :ALEFix prettier<CR>
+nnoremap <F8> :set fileformat=unix<CR>
+nnoremap <F9> :ls<CR>:b
 
 " Closing Characters on enter (CR)
 inoremap (<CR> (<CR>)<Esc>ko
@@ -39,7 +40,7 @@ nnoremap <C-Down> <C-F>
 
 " Buffers and Tabs
 nnoremap <c-h> gT
-nnoremap <c-l> gt
-nnoremap <c-j> <Esc>:bprevious<CR>
-nnoremap <c-k> <Esc>:bnext<CR>
+nnoremap <c-j> gt
+nnoremap <c-k> <Esc>:bprevious<CR>
+nnoremap <c-l> <Esc>:bnext<CR>
 
