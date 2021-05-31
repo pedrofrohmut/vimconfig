@@ -19,6 +19,7 @@ nnoremap <F6> :w<CR>
 nnoremap <F7> :ALEFix prettier<CR>
 nnoremap <F8> :set fileformat=unix<CR>
 nnoremap <F9> :ls<CR>:b
+nnoremap <F12> :source ~/.vimrc<CR>
 
 " Closing Characters on enter (CR)
 inoremap (<CR> (<CR>)<Esc>ko
@@ -44,3 +45,7 @@ nnoremap <c-j> gt
 nnoremap <c-k> <Esc>:bprevious<CR>
 nnoremap <c-l> <Esc>:bnext<CR>
 
+nnoremap <c-t><c-n> :tabnew<CR>
+" <c-t><c-c> not working
+nnoremap <c-t><c-t> :tabclose<CR>
+nnoremap <c-t><c-o> :tabonly<CR>
