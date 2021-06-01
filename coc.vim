@@ -65,22 +65,41 @@ endif
 inoremap <silent><expr> <c-space> coc#refresh()
 
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf <Plug>(coc-fix-current)
+"nnoremap <leader>qf <Plug>(coc-fix-current)
+nnoremap <leader>f <Plug>(coc-fix-current)
 
 " Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
+nnoremap <leader>rn <Plug>(coc-rename)
+" CocRefactor
+nnoremap <leader>rf <Plug>(coc-refactor)
 
 " Show docs on current symbol
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 " Go Definition
-nmap <silent> gd <Plug>(coc-definition)
+nnoremap <silent> gd <Plug>(coc-definition)
 " Go Type
-nmap <silent> gy <Plug>(coc-type-definition)
+nnoremap <silent> gy <Plug>(coc-type-definition)
 " Go implementation
-nmap <silent> gi <Plug>(coc-implementation)
+nnoremap <silent> gi <Plug>(coc-implementation)
 " Go References
-nmap <silent> gr <Plug>(coc-references)
+nnoremap <silent> gr <Plug>(coc-references)
 
 " Show all diagnostics.
-nnoremap <silent><nowait> <leader>gl :<C-u>CocList diagnostics<cr> 
+nnoremap <silent><nowait> <leader>d :<C-u>CocList diagnostics<cr> 
+
+" Format the current buffer
+nnoremap <leader>= <Plug>(coc-format)
+
+" Coc Action to cursor position
+nnoremap <c-space> <Plug>(coc-codeaction-cursor)
+" Coc Action line
+nnoremap <leader><space> <Plug>(coc-codeaction-line)
+" Coc Action selected
+vnoremap <c-space> <Plug>(coc-codeaction-selected)
+
+" Hide Popups
+nnoremap <leader>h <Plug>(coc-float-hide)
+
+" Code Lens
+nnoremap <leader>c <Plug>(coc-codelens-action)
