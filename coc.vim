@@ -62,44 +62,34 @@ endif
 "" MAPS ########################################################################
 
 " Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
+imap <silent><expr> <c-space> coc#refresh()
 
 " Apply AutoFix to problem on the current line.
-"nnoremap <leader>qf <Plug>(coc-fix-current)
-nnoremap <leader>f <Plug>(coc-fix-current)
+nmap <leader>f <Plug>(coc-fix-current)
 
 " Symbol renaming.
-nnoremap <leader>rn <Plug>(coc-rename)
+nmap <leader>rn <Plug>(coc-rename)
 " CocRefactor
-nnoremap <leader>rf <Plug>(coc-refactor)
+nmap <leader>rf <Plug>(coc-refactor)
 
 " Show docs on current symbol
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+nmap <silent> K :call <SID>show_documentation()<CR>
 
 " Go Definition
-nnoremap <silent> gd <Plug>(coc-definition)
+nmap <silent> gd <Plug>(coc-definition)
 " Go Type
-nnoremap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
 " Go implementation
-nnoremap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gi <Plug>(coc-implementation)
 " Go References
-nnoremap <silent> gr <Plug>(coc-references)
+nmap <silent> gr <Plug>(coc-references)
 
 " Show all diagnostics.
-nnoremap <silent><nowait> <leader>d :<C-u>CocList diagnostics<cr> 
+nmap <silent><nowait> <leader>d :<C-u>CocList diagnostics<CR> 
 
-" Format the current buffer
-nnoremap <leader>= <Plug>(coc-format)
-
-" Coc Action to cursor position
-nnoremap <c-space> <Plug>(coc-codeaction-cursor)
-" Coc Action line
-nnoremap <leader><space> <Plug>(coc-codeaction-line)
-" Coc Action selected
-vnoremap <c-space> <Plug>(coc-codeaction-selected)
+" CocAction
+nmap <silent><nowait> <leader>a :CocAction<CR>
+vmap <silent><nowait> <leader>a :CocAction<CR>
 
 " Hide Popups
-nnoremap <leader>h <Plug>(coc-float-hide)
-
-" Code Lens
-nnoremap <leader>c <Plug>(coc-codelens-action)
+nmap <leader>h <Plug>(coc-float-hide)
