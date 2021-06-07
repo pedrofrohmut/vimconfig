@@ -17,7 +17,6 @@ nnoremap <Enter> i<CR><Esc>
 " Utils
 nnoremap <F7> :ALEFix prettier<CR>
 nnoremap <F8> :set fileformat=unix<CR>
-nnoremap <F9> :ls<CR>:b
 nnoremap <F12> :source ~/.vimrc<CR>
 
 " Closing Characters on enter (CR)
@@ -28,34 +27,33 @@ inoremap ({<CR> ({<CR>})<Esc>ko
 inoremap `<CR> `<CR>`<Esc>ko<Tab>
 inoremap (`<CR> (``)<Esc>hi<CR><Esc>ko<Tab>
 
-" Scroll-up
-nnoremap <Up> <C-Y>
-nnoremap <S-Up> <C-U>
-nnoremap <C-UP> <C-B>
-
-" Scroll-down
-nnoremap <Down> <C-E>
-nnoremap <S-Down> <C-D>
-nnoremap <C-Down> <C-F>
-
 "" ### BUFFERS ############################################################
-nnoremap <C-B> :ls<CR>:b
+nnoremap <C-B> :ls<CR>:b<Space>
+nnoremap <F9> :bp<CR>
+nnoremap <F10> :bn<CR>
 
 "" ### TABS ###############################################################
 " # New Tab
-nnoremap <C-T><C-N> :tabnew<CR>
+nnoremap <silent> <C-T><C-N> :tabnew<CR>
 "
 " # Close Tabs
-nnoremap <C-T><C-T> :tabclose<CR>
-nnoremap <C-T><C-O> :tabonly<CR>
+nnoremap <silent> <C-T><C-Q> :tabclose<CR>
+nnoremap <silent> <C-T><C-O> :tabonly<CR>
 
 " # Move Tabs - Left/Right
-nnoremap <C-T><C-H> :-tabmove<CR>
-nnoremap <C-T><C-L> :+tabmove<CR>
+nnoremap <silent> <C-T><C-H> :-tabmove<CR>
+nnoremap <silent> <C-T><C-L> :+tabmove<CR>
 
 " # Go To - Next/Prev
-nnoremap <C-L> :tabnext<CR>
-nnoremap <C-H> :tabprevious<CR>
+nnoremap <silent> <C-L> :tabnext<CR>
+nnoremap <silent> <C-H> :tabprevious<CR>
 
 " # Go To - Tab Index
-nnoremap <C-N> :tabs<CR>:tabnext
+nnoremap <silent> <C-N> :tabs<CR>:tabnext
+
+"" ### WINDOW ############################################################
+"" Resize Horizontal
+nnoremap <silent> <Right> :resize +5<CR>
+nnoremap <silent> <Left> :resize -5<CR>
+nnoremap <silent> <Up> :vertical resize -5<CR>
+nnoremap <silent> <Down> :vertical resize +5<CR>
