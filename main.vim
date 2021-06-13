@@ -8,8 +8,6 @@ source ~/vimconfig/config.vim
 source ~/vimconfig/mymaps.vim
 
 
-" Vim Airline
-source ~/vimconfig/airline.vim
 " Ale
 source ~/vimconfig/ale.vim
 " COC 
@@ -22,7 +20,3 @@ source ~/vimconfig/ctrlp.vim
 source ~/vimconfig/emmet.vim
 " NERD
 source ~/vimconfig/nerd.vim
-" TypeScript
-source ~/vimconfig/typescript.vim
-" Ultisnips
-source ~/vimconfig/snippets.vim

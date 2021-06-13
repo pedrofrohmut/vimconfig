@@ -15,6 +15,8 @@ nnoremap <C-Enter> o<Esc>k
 nnoremap <Enter> i<CR><Esc>
 
 " Utils
+nnoremap <F3> :%bd\|e#\|bd#
+nnoremap <F4> :%bd
 nnoremap <F7> :ALEFix prettier<CR>
 nnoremap <F8> :set fileformat=unix<CR>
 nnoremap <F12> :source ~/.vimrc<CR>
@@ -29,8 +31,8 @@ inoremap (`<CR> (``)<Esc>hi<CR><Esc>ko<Tab>
 
 "" ### BUFFERS ############################################################
 nnoremap <C-B> :ls<CR>:b<Space>
-nnoremap <F9> :bp<CR>
-nnoremap <F10> :bn<CR>
+nnoremap <silent> <F9> :bp<CR>
+nnoremap <silent> <F10> :bn<CR>
 
 "" ### TABS ###############################################################
 " # New Tab

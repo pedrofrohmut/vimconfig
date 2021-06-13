@@ -6,28 +6,6 @@ Plug 'pangloss/vim-javascript'
 " JSX Support
 Plug 'maxmellon/vim-jsx-pretty'
 
-" React Snippets (Python 3 and ultisnips Required)
-"Plug 'epilande/vim-react-snippets'
-
-" Ultisnips (Required for React Snippets)
-"Plug 'sirver/ultisnips'
-
-" VueJS Support -> Test: Replaced for coc-vetur
-"Plug 'posva/vim-vue' 
-
-" Svelte Syntax Highlight
-"Plug 'leafOfTree/vim-svelte-plugin'
-
-" TypeScript Syntax Highlight
-Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
-
-" TypeScript Indentation
-Plug 'jason0x43/vim-js-indent'
-
-" TypeScript Server & Completion
-Plug 'Quramy/tsuquyomi'
-
 " C# Support - Omnisharp
 Plug 'OmniSharp/omnisharp-vim'
 
@@ -58,10 +36,6 @@ Plug 'editorconfig/editorconfig-vim'
 
 " CtrlP - Quick open files
 Plug 'ctrlpvim/ctrlp.vim'
-
-" Vim Airline
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
 
 " Lots of good Colorschemes for Vim
 Plug 'chriskempson/base16-vim'
