@@ -20,3 +20,5 @@ source ~/vimconfig/ctrlp.vim
 source ~/vimconfig/emmet.vim
 " NERD
 source ~/vimconfig/nerd.vim
+" Sneak
+source ~/vimconfig/sneak.vim

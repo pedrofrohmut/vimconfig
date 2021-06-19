@@ -15,8 +15,8 @@ nnoremap <C-Enter> o<Esc>k
 nnoremap <Enter> i<CR><Esc>
 
 " Utils
-nnoremap <F3> :%bd\|e#\|bd#
-nnoremap <F4> :%bd
+nnoremap <F4> :bufdo bd
+nnoremap <silent> <F5> :wa<CR>
 nnoremap <F7> :ALEFix prettier<CR>
 nnoremap <F8> :set fileformat=unix<CR>
 nnoremap <F12> :source ~/.vimrc<CR>

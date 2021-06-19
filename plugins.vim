@@ -16,6 +16,9 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 
+" Vim Sneak - The missing motion
+Plug 'justinmk/vim-sneak'
+
 " Commenter
 Plug 'tpope/vim-commentary'
 

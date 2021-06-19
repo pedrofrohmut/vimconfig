@@ -30,9 +30,10 @@ set guifont=Consolas:h13:cANSI:qDRAFT " BEST but no support for vim-airline
 "" COLOR SCHEMES
 "colorscheme base16-black-metal-bathory
 "colorscheme base16-black-metal-mayhem
+colorscheme base16-bright
 "colorscheme base16-chalk
 "colorscheme base16-default-dark
-colorscheme base16-harmonic-dark
+"colorscheme base16-harmonic-dark
 "colorscheme base16-horizon-dark
 "colorscheme base16-ia-dark
 "colorscheme base16-materia
