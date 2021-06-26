@@ -1,15 +1,11 @@
 " Vim-Plug
 source ~/vimconfig/plugins.vim
 
-
 " Vim Config/Defaults
 source ~/vimconfig/config.vim
 " My Maps
 source ~/vimconfig/mymaps.vim
 
-
-" Ale
-source ~/vimconfig/ale.vim
 " COC 
 source ~/vimconfig/coc.vim
 " C# / OmniSharp

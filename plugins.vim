@@ -3,6 +3,9 @@ call plug#begin('~/vimfiles/plugged') " Plug BEGIN
 " JavaScript Support
 Plug 'pangloss/vim-javascript'
 
+" TypeScript Syntax
+Plug 'leafgarland/typescript-vim'
+
 " JSX Support
 Plug 'maxmellon/vim-jsx-pretty'
 
@@ -32,7 +35,7 @@ Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
 " Linter & Formatter
-Plug 'w0rp/ale'
+"Plug 'w0rp/ale'
 
 " EditorConfig
 Plug 'editorconfig/editorconfig-vim'

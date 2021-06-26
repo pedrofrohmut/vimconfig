@@ -86,6 +86,8 @@ nmap <silent> gr <Plug>(coc-references)
 
 " Show all diagnostics.
 nmap <silent><nowait> <leader>d :<C-u>CocList diagnostics<CR> 
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " CocAction
 nmap <silent><nowait> <leader>a :CocAction<CR>
@@ -93,3 +95,7 @@ vmap <silent><nowait> <leader>a :CocAction<CR>
 
 " Hide Popups
 nmap <leader>h <Plug>(coc-float-hide)
+
+" Format
+nmap <F7> <Plug>(coc-format)
+"command! -nargs=0 Format :call CocAction('format')
