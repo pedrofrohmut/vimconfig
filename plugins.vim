@@ -15,6 +15,9 @@ Plug 'OmniSharp/omnisharp-vim'
 " Elixir Syntax Highlight/Indentation
 Plug 'elixir-editors/vim-elixir'
 
+" Kotlin syntax highlight
+Plug 'udalov/kotlin-vim'
+
 " Surrounder for Simple Stuff
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -33,9 +36,6 @@ Plug 'mattn/emmet-vim'
 
 " NERDTree - File Tree Manager and Viewer
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-
-" Linter & Formatter
-"Plug 'w0rp/ale'
 
 " EditorConfig
 Plug 'editorconfig/editorconfig-vim'

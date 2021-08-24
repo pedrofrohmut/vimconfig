@@ -4,8 +4,9 @@ autocmd VimEnter * call libcallnr("gvimfullscreen_64.dll", "ToggleFullScreen", 0
 nnoremap <F11> <Esc>:call libcallnr("gvimfullscreen_64.dll", "ToggleFullScreen", 0)<CR>
 
 "" VIM Configs
-set number
-set relativenumber
+" set number
+" set relativenumber
+set signcolumn=yes
 set autoindent
 set expandtab
 set shiftwidth=2
@@ -23,14 +24,14 @@ set cmdheight=1
 set backspace=2
 set mouse=a
 
-set colorcolumn=101
-set guifont=Consolas:h13:cANSI:qDRAFT " BEST but no support for vim-airline
-" set guifont=Droid_Sans_Mono_Slashed_for_Pow:h11:cANSI:qANTIALIASED
+set colorcolumn=101,121
+set guifont=Consolas:h13:cANSI:qDRAFT
+colorscheme base16-bright
+"colorscheme slate
 
 "" COLOR SCHEMES
 "colorscheme base16-black-metal-bathory
 "colorscheme base16-black-metal-mayhem
-colorscheme base16-bright
 "colorscheme base16-chalk
 "colorscheme base16-default-dark
 "colorscheme base16-harmonic-dark
