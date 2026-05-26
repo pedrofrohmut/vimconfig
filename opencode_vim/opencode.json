@@ -1,0 +1,20 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "plan",
+  "agent": {
+    "plan": {
+      "permission": { "edit": "deny" }
+    },
+    "build": {
+      "disable": true
+    }
+  },
+  "permission": {
+    "read": { "*": "deny", "~/.config/vim/**": "allow" },
+    "edit": { "*": "deny", "~/.config/vim/**": "allow" },
+    "glob": { "*": "deny", "~/.config/vim/**": "allow" },
+    "grep": { "*": "deny", "~/.config/vim/**": "allow" },
+    "external_directory": { "*": "deny", "~/.config/vim/**": "allow" },
+    "bash": { "*": "ask" }
+  }
+}
