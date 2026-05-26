@@ -18,7 +18,6 @@ let g:sonokai_better_performance=1
 let g:sonokai_transparent_background=2
 colorscheme sonokai
 
-
 filetype indent plugin on
 syntax on
 
@@ -40,11 +39,23 @@ set autoread
 set nocompatible
 set scrollfocus
 set encoding=utf-8
-set fileformat=unix
+"set fileformat=unix
 set cmdheight=1
 set backspace=2
 set mouse=a
 set colorcolumn=101,121
+
+" Preserve file format (line endings)
+set fileformat=unix
+set fileformats=unix,dos,mac
+
+" Don't automatically change line endings
+set nofixendofline
+set nofixeol
+
+" Auto-detect file format and preserve it
+autocmd BufReadPost * setlocal fileformat=unix
+autocmd BufWritePre * setlocal fileformat=unix
 
 " GVIM
 if has('gui_running')
@@ -59,7 +70,7 @@ endif
 let mapleader=" "
 
 " Shift + u to redo
-nnoremap U <C-r> 
+nnoremap U <C-r>
 
 " Closer Del
 inoremap <C-l> <Del>
