@@ -25,7 +25,6 @@ set smartcase
 set tabstop=4
 set updatetime=1000
 set wrapscan
-set formatoptions-=ro
 set laststatus=2
 set noshowmode
 
@@ -98,4 +97,9 @@ augroup END
 augroup IndentTwoSpaces
   autocmd!
   autocmd FileType javascript,typescript,typescriptreact,javascriptreact,html,xml setlocal shiftwidth=2 tabstop=2
+augroup END
+
+augroup DisableAutoComment
+  autocmd!
+  autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 augroup END
