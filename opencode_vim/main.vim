@@ -47,6 +47,7 @@ let g:lightline = { "colorscheme": "sonokai", "active": { "left": [["paste"], ["
 let mapleader = " "
 
 inoremap <C-l> <Del>
+nnoremap <CR> i<CR><Esc>
 nnoremap U <C-r>
 nnoremap H ^
 nnoremap L $
@@ -60,7 +61,7 @@ nnoremap <Up> :resize +5<CR>
 nnoremap <Down> :resize -5<CR>
 nnoremap <Left> :vertical resize +5<CR>
 nnoremap <Right> :vertical resize -5<CR>
-nnoremap <leader>hh :nohlsearch<CR>:echo ""<CR>
+nnoremap <leader>hh :nohlsearch<CR>:set cmdheight=1<CR>:echo ""<CR>
 nnoremap gb :b#<CR>
 nnoremap <C-Right> zz
 nnoremap s <Nop>
@@ -85,7 +86,9 @@ nnoremap <leader>fh :Helptags<CR>
 nnoremap <leader>fk :Maps<CR>
 
 " Goyo
-nnoremap <leader>gg :Goyo 140<CR>
+let g:goyo_height = 999
+let g:goyo_width = 140
+nnoremap <leader>gg :Goyo<CR>
 
 augroup CursorLine
   autocmd!
@@ -109,3 +112,6 @@ augroup DisableAutoComment
   autocmd!
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 augroup END
+
+" Gvim config
+source $HOME/.config/vim/opencode_vim/gvim.vim
