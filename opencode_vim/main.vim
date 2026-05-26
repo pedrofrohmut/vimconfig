@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugged') "---------------------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#########################################
 
   Plug 'sainnhe/sonokai'
   Plug 'tpope/vim-commentary'
@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'itchyny/lightline.vim'
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-gitgutter'
+  Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
@@ -36,7 +37,7 @@ colorscheme sonokai
 
 highlight MatchParen ctermfg=red ctermbg=NONE guifg=red guibg=NONE
 highlight ExtraWhitespace ctermbg=lightgrey guibg=lightgrey
-highlight TabChar ctermbg=lightblue guibg=lightblue
+highlight TabChar ctermbg=lightblue guibg=darkblue
 
 let g:gitgutter_map_keys = 0
 
@@ -60,9 +61,10 @@ nnoremap <Down> :resize -5<CR>
 nnoremap <Left> :vertical resize +5<CR>
 nnoremap <Right> :vertical resize -5<CR>
 nnoremap <leader>hh :nohlsearch<CR>:echo ""<CR>
-
 nnoremap gb :b#<CR>
 nnoremap <C-Right> zz
+nnoremap s <Nop>
+nnoremap S <Nop>
 
 " Nerd tree
 let g:NERDTreeWinSize = 48
@@ -73,6 +75,7 @@ nnoremap <leader>tt :NERDTreeToggle<CR>
 nnoremap ]g <Plug>(GitGutterNextHunk)
 nnoremap [g <Plug>(GitGutterPrevHunk)
 nnoremap <leader>hp <Plug>(GitGutterPreviewHunk)
+command GitStage <Plug>(GitGutterStageHunk)
 
 " Fzf
 nnoremap <leader>ff :Files<CR>
@@ -80,6 +83,9 @@ nnoremap <leader>fg :Rg<CR>
 nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>fh :Helptags<CR>
 nnoremap <leader>fk :Maps<CR>
+
+" Goyo
+nnoremap <leader>gg :Goyo 140<CR>
 
 augroup CursorLine
   autocmd!
