@@ -19,6 +19,7 @@ filetype plugin on
 set autoread
 set colorcolumn=81,121
 set cursorline
+set cursorlineopt=number
 set expandtab
 set fileformats=unix,dos
 set hlsearch
@@ -73,11 +74,14 @@ function! s:tweak_color_scheme()
     highlight Normal guibg=NONE ctermbg=NONE
     highlight Comment   ctermfg=67
     highlight String    ctermfg=120
+    highlight CursorLineNr ctermbg=NONE ctermfg=11
     " highlight Statement ctermfg=248
     " highlight Statement ctermfg=204 " Nice red
 endfunction
 autocmd! ColorScheme quiet call s:tweak_color_scheme()
 colorscheme quiet
+
+
 
 " Keybinds
 let mapleader = " "
