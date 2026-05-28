@@ -111,8 +111,31 @@ nnoremap <leader>hh :nohlsearch<CR>:set cmdheight=1<CR>:echo ""<CR>
 nnoremap <Esc> :nohlsearch<CR>:set cmdheight=1<CR>:echo ""<CR>
 nnoremap gb :b#<CR>
 nnoremap <C-Right> zz
-nnoremap <leader>fe :Explore<CR>
 xnoremap S s
+nnoremap <leader>fe :Explore<CR>
+" nnoremap <leader>xx :terminal<CR>
+
+" Reuse Terminal Instance
+let g:terminal_bufnr = -1
+
+function! OpenOrSwitchToTerminal()
+    if g:terminal_bufnr != -1 && bufexists(g:terminal_bufnr)
+        execute 'bo sbuf' g:terminal_bufnr
+    else
+        " bo new | terminal
+        terminal
+        let g:terminal_bufnr = bufnr('%')
+        setlocal bufhidden=hide
+    endif
+endfunction
+
+nnoremap <leader>xx :call OpenOrSwitchToTerminal()<CR>
+
+" Hide terminal on win leave
+augroup TerminalAutoClose
+    autocmd!
+    autocmd WinLeave * if &buftype == 'terminal' && winnr('$') > 1 | close | endif
+augroup END
 
 " Nerd tree
 let g:NERDTreeWinSize = 50
@@ -121,9 +144,7 @@ nnoremap <leader>tt :NERDTreeRefreshRoot<CR>:NERDTreeToggle<CR>
 
 augroup NERDTreeAutoRefresh
     autocmd!
-    " Refresh when navigating to the NERDTree buffer
     autocmd BufEnter NERD_tree_* if &filetype ==# 'nerdtree' | NERDTreeRefreshRoot | endif
-    " Refresh when Vim regains OS focus (only if currently in NERDTree)
     autocmd FocusGained * if &filetype ==# 'nerdtree' | NERDTreeRefreshRoot | endif
 augroup END
 
@@ -157,7 +178,7 @@ nnoremap <leader>fk :Maps<CR>
 
 " Goyo
 let g:goyo_height = 999
-let g:goyo_width = 140
+let g:goyo_width = 120
 nnoremap <leader>gg :Goyo<CR>
 
 " Emmet
