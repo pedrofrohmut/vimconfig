@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'mattn/emmet-vim'
   Plug 'pangloss/vim-javascript'
   Plug 'MaxMEllon/vim-jsx-pretty'
+  Plug 'justinmk/vim-sneak'
 
 call plug#end()
 
@@ -35,6 +36,7 @@ set noshowmode
 set mouse=a
 set splitbelow
 set splitright
+set hidden
 
 " Enable wildmenu for better visual completion
 set wildmenu
@@ -88,9 +90,9 @@ let mapleader = " "
 
 nnoremap R <Nop>
 nnoremap Q <Nop>
-nnoremap s <Nop>
-nnoremap S <Nop>
-xnoremap S <Nop>
+" nnoremap s <Nop>
+" nnoremap S <Nop>
+" xnoremap S <Nop>
 
 nnoremap <C-f> <Nop>
 nnoremap <C-b> <Nop>
@@ -193,6 +195,15 @@ let g:user_emmet_settings = {
 \}
 inoremap <C-k> <Plug>(emmet-expand-abbr)
 xnoremap <C-k> <Plug>(emmet-expand-abbr)
+
+" Sneak
+let g:sneak#label = 1
+nnoremap f <Plug>Sneak_f
+nnoremap F <Plug>Sneak_F
+nnoremap t <Plug>Sneak_t
+nnoremap T <Plug>Sneak_T
+nnoremap S H0<Plug>SneakLabel_s
+nnoremap s H0<Plug>SneakLabel_s
 
 augroup CursorLine
   autocmd!
